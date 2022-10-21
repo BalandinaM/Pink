@@ -3,4 +3,17 @@ html(lang="ru")
     meta(charset="utf-8")
     title= "Pug. Начало работы"
   body
+      include parts/header.pug
       h1 Hello, World!
+      h2 Hello, pug!
+      h3 Hello, Marina!
+      h4 Приветствую тебя!
+      ul.list я список
+        li.list__item я элемент списка
+        li.list__item--red я второй элемент списка
+      p.paragraph Lorem ipsum <em>dolor</em> sit amet, consectetur adipisicing elit.
+      nav.menu
+        ul.menu__list 
+          each value, index in {'Главная' : 'home', 'О компании' : 'about', 'Услуги' : 'services', 'Каталог' : 'catalog', 'Контакты' : 'contact'}
+            li.list__item
+                a.list__link(href= "/" + value + ".html")= index
