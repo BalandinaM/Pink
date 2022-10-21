@@ -119,7 +119,8 @@ exports.svgsprite = svgsprite;
 const copyImages = () => {
   return gulp.src([
     "source/img/**/*.{png,jpg,svg}",
-    "!source/img/icons/*.svg"
+    "!source/img/icons/*.svg",
+    "!source/img/makety*.png"
   ])
     .pipe(gulp.dest("build/img"))
 }
@@ -178,6 +179,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/pug/*.pug", gulp.parallel("pugHtml"));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
