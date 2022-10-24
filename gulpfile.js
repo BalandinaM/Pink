@@ -179,7 +179,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/*.js", gulp.series(scripts));
-  gulp.watch("source/pug/*.pug", gulp.parallel("pugHtml"));
+  gulp.watch("source/pug/*.pug", gulp.series("pugHtml"));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -209,7 +209,7 @@ exports.default = gulp.series(
   copyImages,
   pugHtml,
   gulp.parallel(
-    //styles,
+    styles,
     html,
     scripts,
     svgsprite,
