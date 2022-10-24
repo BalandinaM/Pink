@@ -1,38 +1,122 @@
-
+<!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8"/>
-    <title>Pug. Начало работы</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Pink</title>
   </head>
   <body>
-    <header>Это шапка сайта
-      <nav>Это навигационное меню сайта
-        <ul>Я состою из списка
-          <li>Первый пункт</li>
-          <li>Второй пункт</li>
-          <li>Третий пункт</li>
-          <li>Четвертый пункт</li>
-          <li>Пятый пункт</li>
+    <header class="page-header"><a class="page-header__logo" href="#">
+        <!--picture -->
+        <!--    source(media="(min-width: 1200px)" srcset="img/logo_desktop_pink.svg")-->
+        <!--    source(media="min-width: 660px)" srcset="img/logo_tablet_pink.svg")-->
+        <!--    img(src="img/logo_mobile_pink.svg" width="74" height="23" alt=" ")-->
+        <svg width="74" height="23" aria-hidden="true" focusable="false">
+          <use xlink:href="img/icons/sprite.svg#logo_pink"></use>
+        </svg></a>
+      <nav>
+        <button> </button>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Фотографии</a></li>
+          <li><a href="#">Конкурс</a></li>
+          <li><a href="#">HTML ACADEMY</a></li>
         </ul>
       </nav>
     </header>
-    <h1>Hello, World!</h1>
-    <h2>Hello, pug!</h2>
-    <h3>Hello, Marina!</h3>
-    <h4>Приветствую тебя!</h4>
-    <ul class="list">я список
-      <li class="list__item">я элемент списка</li>
-      <li class="list__item--red">я второй элемент списка</li>
-    </ul>
-    <p class="paragraph">Lorem ipsum <em>dolor</em> sit amet, consectetur adipisicing elit.</p>
-    <nav class="menu">
-      <ul class="menu__list"> 
-        <li class="list__item"><a class="list__link" href="/home.html">Главная</a></li>
-        <li class="list__item"><a class="list__link" href="/about.html">О компании</a></li>
-        <li class="list__item"><a class="list__link" href="/services.html">Услуги</a></li>
-        <li class="list__item"><a class="list__link" href="/catalog.html">Каталог</a></li>
-        <li class="list__item"><a class="list__link" href="/contact.html">Контакты</a></li>
-      </ul>
-    </nav>
+    <main>
+      <section class="promo">
+        <h1 class="visually-hidden">Наше приложение позволит взглянуть на жизнь иначе!</h1>
+        <h2>Взгляните на жизнь иначе!</h2><a href="https://play.google.com/">Скачать приложение</a><a href="https://apps.apple.com/" aria-label="Магазин приложений для Apple">
+          <picture>
+            <source type="image/webp" srcset="img/index/logo_apple.webp 1x, img/index/logo_apple@2x.webp 2x"><img src="img/index/logo_apple.png" srcset="img/index/logo_apple@2x.png" width="47" height="56" alt="Иконка Apple">
+          </picture></a><a href="https://play.google.com/" aria-label="Магазин приложений для Android">
+          <picture>
+            <source type="image/webp" srcset="img/index/logo_android.webp 1x, img/index/logo_android@2x.webp 2x"><img src="img/index/logo_android.png" srcset="img/index/logo_android@2x.png" width="43" height="47" alt="Иконка Android">
+          </picture></a><a href="http://www.windowsphone.com/store/" aria-label="Магазин приложений для Windous">
+          <picture>
+            <source type="image/webp" srcset="img/index/logo_microsoft.webp 1x, img/index/logo_microsoft@2x.webp 2x"><img src="img/index/logo_microsoft.png" srcset="img/index/logo_microsoft@2x.png" width="43" height="47" alt="Иконка Windous">
+          </picture></a>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Информация о приложении</h2>
+        <h2>Устали от серости мегаполиса?</h2>
+        <h2>Нам есть, что вам предложить!</h2>
+        <ul>
+          <li>
+            <h3>Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li>
+            <h3>Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li>
+            <h3>Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section> 
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <blockquote> 
+          <h3>Николай Петров</h3>
+          <p>25 лет, водитель трамвая</p>
+          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <div>
+          <input type="radio" name="reviews" value="reviews_1" checked>
+          <input type="radio" name="reviews" value="reviews_2">
+          <input type="radio" name="reviews" value="reviews_3">
+        </div>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Пакеты доступные к покупке</h2>
+        <div>
+          <input type="radio" name="price" value="base">
+          <input type="radio" name="price" value="standart" checked>
+          <input type="radio" name="price" value="anlim">
+        </div>
+      </section>
+      <section> 
+        <h2>Остались вопросы? <br> Свяжитесь с нами!</h2>
+        <ul> 
+          <li> 
+            <h3>Звоните:</h3><a href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li>
+            <h3>Пишите:</h3><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li> 
+            <h3>Приезжайте в гости:</h3>
+            <p>ул. Большая Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470375!2d30.318562737554867!3d59.93871642390735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1663844631789!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      </section>
+    </main>
+    <footer>
+      <div> <a href="index.html">
+          <svg width="145" height="40" aria-hidden="true" focusable="false">
+            <use xlink:href="img/icons/sprite.svg#logo_pink"></use>
+          </svg></a></div>
+      <div> 
+        <ul> 
+          <li> <a href="#">
+              <svg width="18" height="14" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#icon_twitter"></use>
+              </svg></a></li>
+          <li> <a href="#">
+              <svg width="9" height="18" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#icon_fb"></use>
+              </svg></a></li>
+          <li> <a href="#">
+              <svg width="15" height="13" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#icon_youtube"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
