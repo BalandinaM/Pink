@@ -1,15 +1,13 @@
-header.page-header
-    a.page-header__logo(href="#")
-        //picture 
-        //    source(media="(min-width: 1200px)" srcset="img/logo_desktop_pink.svg")
-        //    source(media="min-width: 660px)" srcset="img/logo_tablet_pink.svg")
-        //    img(src="img/logo_mobile_pink.svg" width="74" height="23" alt=" ")
-        svg(width="74" height="23" aria-hidden="true" focusable="false")
-                        use(xlink:href="img/icons/sprite.svg#logo_pink")
-    nav
-        button 
-        ul
-            each name  in ["Главная", "Фотографии", "Конкурс", "HTML ACADEMY"]
-                li
-                    a(href="#")= name
-    
+header.header.header-wrap
+    a.header__logo.logo.header__logo--bg-opacity(href="#")
+        picture
+            source(media="(min-width: 1200px)" srcset="img/logo_desktop_pink.svg")
+            source(media="(min-width: 660px)" srcset="img/logo_tablet_pink.svg")
+            img.logo__img(src="img/logo_mobile_pink.svg" width="74" height="23" alt="Лого Pink")
+    nav.header__nav.nav.header__nav--closed
+        button.header__button(type="button" aria-label="Закрыть меню")
+        ul.nav__list
+            each value, index in {"Главная" : "index", "Фотографии" : "photo", "Конкурс" : "contest", "HTML ACADEMY" : "academy"}
+                li.nav__item
+                    a.nav__link(href= value + ".html")= index
+

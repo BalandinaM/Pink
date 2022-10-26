@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 130px;
+    padding-right: 130px;
+
+    background-color: rgba($grey-basic, 0.3);
+  }
+}

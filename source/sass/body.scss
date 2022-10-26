@@ -1,0 +1,13 @@
+.body {
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 100%;
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  font-family: $opensans;
+
+  background-color: $white;
+}

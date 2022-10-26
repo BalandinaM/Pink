@@ -1,0 +1,50 @@
+.header__logo {
+  background-color: $grey-basic;
+
+  align-self: flex-start;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 22px 20px;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid $black;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+
+    width: 317px;
+    flex-shrink: 0;
+  }
+}
+
+.header__logo--bg-opacity {
+  @media (min-width: $tablet-width) {
+    background-color: rgba($grey-basic, 0.3);
+    border: none;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.logo__img {
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+}

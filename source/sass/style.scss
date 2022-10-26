@@ -3,3 +3,11 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+
+//Blocks
+
+@import "body.scss";
+@import "header/header.scss";
+@import "header/header__logo.scss";
+@import "header/header__nav.scss";
+@import "header/header__button.scss";
