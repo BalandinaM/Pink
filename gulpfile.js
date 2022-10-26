@@ -67,6 +67,17 @@ const styles = () => {
 
 exports.styles = styles;
 
+//const normStyles = () => {
+//  return gulp.src("source/css/normalize.css")
+//    .pipe(plumber())
+//    .pipe(postcss(csso()))
+//    .pipe(rename("style.min.css"))
+//    .pipe(gulp.dest("build/css"))
+//    .pipe(sync.stream());
+//}
+//
+//exports.normStyles = normStyles;
+
 //Img
 
 const images = () => {
@@ -82,7 +93,7 @@ const images = () => {
 
 exports.images = images;
 
-// WebP 
+// WebP
 
 const imagewebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
@@ -139,6 +150,7 @@ exports.clean = clean;
 
 const copy = (done) => {
   gulp.src([
+    "source/css/normalize.min.css",
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "!source/img/icons/*.svg"
@@ -189,9 +201,10 @@ const build = gulp.series(
   clean,
   copy,
   images,
-  pugHtml,
+  pugHtml,  //насколько я понимаю, в идеале он не должен стоять тут в сборке, файлы должны обрабатываться до того как начинает работать сборщик, а в сборзик дожен попадать уже чистый html
   gulp.parallel(
     styles,
+    //normStyles,
     html,
     scripts,
     svgsprite,
@@ -210,6 +223,7 @@ exports.default = gulp.series(
   pugHtml,
   gulp.parallel(
     styles,
+    //normStyles,
     html,
     scripts,
     svgsprite,
