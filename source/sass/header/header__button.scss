@@ -63,12 +63,13 @@
     box-shadow: 0 9px 0 0 $white, 0 18px 0 0 $white;
   }
 
-  .header__nav--closed .header__button:hover::before {
-    background-color: $pink-basic;
-    box-shadow:
-      0 9px 0 0 $pink-basic,
-      0 18px 0 0 $pink-basic;
-  }
+  //.header__nav--closed .header__button:hover::before {
+  ////.header__nav--closed .header__button:focus::before {
+  //  background-color: $pink-basic;
+  //  box-shadow:
+  //    0 9px 0 0 $pink-basic,
+  //    0 18px 0 0 $pink-basic;
+  //}
 
   .header__nav--closed .header__button:active::before {
     background-color: rgba($pink-basic, 0.3);
