@@ -8,23 +8,12 @@
 
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid $black;
-}
-
-.header__logo {
-  align-self: flex-start;
-  display: block;
-  box-sizing: border-box;
-  padding: 22px 0;
-
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    padding-top: 27px;
-    padding-bottom: 40px;
-  }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    box-shadow: none;
+    border-bottom: none;
+    padding: 0;
 
     width: 317px;
     flex-shrink: 0;
@@ -43,6 +32,20 @@
   }
 }
 
+.header__logo {
+  align-self: flex-start;
+  display: block;
+  box-sizing: border-box;
+  padding: 22px 0;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-bottom: 40px;
+  }
+}
+
 .logo__img {
   width: 74px;
   height: 23px;
@@ -51,4 +54,8 @@
     width: 145px;
     height: 40px;
   }
+}
+
+.header__logo:active .logo__img {
+  filter: opacity(30%);
 }
