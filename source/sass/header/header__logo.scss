@@ -21,11 +21,10 @@
 }
 
 .header__wrap-logo--bg-opacity {
-  @media (min-width: $tablet-width) {
-    background-color: rgba($grey-basic, 0.3);
-    border: none;
-    box-shadow: none;
-  }
+  background-color: rgba($grey-basic, 0.3);
+  border: none;
+  box-shadow: none;
+
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
