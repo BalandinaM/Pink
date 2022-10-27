@@ -27,33 +27,39 @@
     <main>
       <section class="intro intro__wrap">
         <picture>
-          <source media="(min-width: 1200px),(min-width: 660px)" type="image/webp" srcset="img/index/intro_back_tablet@2x.webp 2x, img/index/intro_back_tablet.webp 1x">
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/index/intro_back_desktop@2x.webp 2x, img/index/intro_back_desktop.webp 1x">
+          <source media="(min-width: 660px)" type="image/webp" srcset="img/index/intro_back_tablet@2x.webp 2x, img/index/intro_back_tablet.webp 1x">
           <source type="image/webp" srcset="img/index/intro_back_mobile.webp 1x, img/index/intro_back_mobile@2x.png 2x">
-          <source media="(min-width: 1200px),(min-width: 660px)" srcset="img/index/intro_back_tablet@2x.png 2x, img/index/intro_back_tablet.png 1x"><img class="intro__bg-img" src="img/index/intro_back_mobile.png" srcset="img/index/intro_back_mobile@2x.png 2x" width="320" height="462" alt="Серая реальность. Фотография здания с колоннами, дорога, машины, пешеходы и все в серых тонах">
+          <source media="(min-width: 1200px)" srcset="img/index/intro_back_desktop@2x.png 2x, img/index/intro_back_desktop.png 1x">
+          <source media="(min-width: 660px)" srcset="img/index/intro_back_tablet@2x.png 2x, img/index/intro_back_tablet.png 1x"><img class="intro__bg-img" src="img/index/intro_back_mobile.png" srcset="img/index/intro_back_mobile@2x.png 2x" width="320" height="462" alt="Серая реальность. Фотография здания с колоннами, дорога, машины, пешеходы и все в серых тонах">
         </picture>
         <picture>
-          <source media="(min-width: 1200px),(min-width: 660px)" type="image/webp" srcset="img/index/intro_phone_tablet@2x.webp 2x, img/index/intro_phone_tablet.webp 1x">
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/index/intro_phone_desktop@2x.webp 2x, img/index/intro_phone_desktop.webp 1x">
+          <source media="(min-width: 660px)" type="image/webp" srcset="img/index/intro_phone_tablet@2x.webp 2x, img/index/intro_phone_tablet.webp 1x">
           <source type="image/webp" srcset="img/index/intro_phone_mobile.webp 1x, img/index/intro_phone_mobile@2x.webp 2x">
-          <source media="(min-width: 1200px),(min-width: 660px)" srcset="img/index/intro_phone_tablet@2x.png 2x, img/index/intro_phone_tablet.png 1x"><img class="intro__bg-img-phone" src="img/index/intro_phone_mobile.png" srcset="img/index/intro_phone_mobile@2x.png 2x" width="320" height="286" alt="Айфон в руке">
+          <source media="(min-width: 1200px)" srcset="img/index/intro_phone_desktop@2x.png 2x, img/index/intro_phone_desktop.png 1x">
+          <source media="(min-width: 660px)" srcset="img/index/intro_phone_tablet@2x.png 2x, img/index/intro_phone_tablet.png 1x"><img class="intro__bg-img-phone" src="img/index/intro_phone_mobile.png" srcset="img/index/intro_phone_mobile@2x.png 2x" width="320" height="286" alt="Айфон в руке">
         </picture>
         <picture>
           <source media="(min-width: 1200px),(min-width: 660px)" type="image/webp" srcset="img/index/intro_screen_tablet@2x.webp 2x, img/index/intro_screen_tablet.webp 1x">
           <source type="image/webp" srcset="img/index/intro_screen_mobile.webp 1x, img/index/intro_screen_mobile@2x.webp 2x">
           <source media="(min-width: 1200px),(min-width: 660px)" srcset="img/index/intro_screen_tablet@2x.png 2x, img/index/intro_screen_tablet.png 1x"><img class="intro__bg-img-screen" src="img/index/intro_screen_mobile.png" srcset="img/index/intro_screen_mobile@2x.png 2x" width="111" height="197" alt="Приложение Pink в действии. Приукрашенная в розовый цвет действительность">
         </picture>
-        <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
-        <div class="intro__link-wrap"><a class="intro__button" href="https://play.google.com/">Скачать приложение</a>
-          <div class="intro__link-os link-os"><a class="link-os__apple" href="https://apps.apple.com/" aria-label="Магазин приложений для Apple">
-              <picture>
-                <source type="image/webp" srcset="img/index/logo_apple.webp 1x, img/index/logo_apple@2x.webp 2x"><img src="img/index/logo_apple.png" srcset="img/index/logo_apple@2x.png" width="47" height="56" alt="Иконка Apple">
-              </picture></a><a class="link-os__android" href="https://play.google.com/" aria-label="Магазин приложений для Android">
-              <picture>
-                <source type="image/webp" srcset="img/index/logo_android.webp 1x, img/index/logo_android@2x.webp 2x"><img src="img/index/logo_android.png" srcset="img/index/logo_android@2x.png" width="43" height="47" alt="Иконка Android">
-              </picture></a><a class="link-os__microsoft" href="http://www.windowsphone.com/store/" aria-label="Магазин приложений для Windous">
-              <picture>
-                <source type="image/webp" srcset="img/index/logo_microsoft.webp 1x, img/index/logo_microsoft@2x.webp 2x"><img src="img/index/logo_microsoft.png" srcset="img/index/logo_microsoft@2x.png" width="43" height="47" alt="Иконка Windous">
-              </picture></a></div>
-          <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="intro__wrap-content">
+          <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
+          <div class="intro__link-wrap"><a class="intro__button" href="https://play.google.com/">Скачать приложение</a>
+            <div class="intro__link-os link-os"><a class="link-os__apple" href="https://apps.apple.com/" aria-label="Магазин приложений для Apple">
+                <picture>
+                  <source type="image/webp" srcset="img/index/logo_apple.webp 1x, img/index/logo_apple@2x.webp 2x"><img src="img/index/logo_apple.png" srcset="img/index/logo_apple@2x.png" width="47" height="56" alt="Иконка Apple">
+                </picture></a><a class="link-os__android" href="https://play.google.com/" aria-label="Магазин приложений для Android">
+                <picture>
+                  <source type="image/webp" srcset="img/index/logo_android.webp 1x, img/index/logo_android@2x.webp 2x"><img src="img/index/logo_android.png" srcset="img/index/logo_android@2x.png" width="43" height="47" alt="Иконка Android">
+                </picture></a><a class="link-os__microsoft" href="http://www.windowsphone.com/store/" aria-label="Магазин приложений для Windous">
+                <picture>
+                  <source type="image/webp" srcset="img/index/logo_microsoft.webp 1x, img/index/logo_microsoft@2x.webp 2x"><img src="img/index/logo_microsoft.png" srcset="img/index/logo_microsoft@2x.png" width="43" height="47" alt="Иконка Windous">
+                </picture></a></div>
+            <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
       <section>
