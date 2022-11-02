@@ -150,7 +150,7 @@ exports.clean = clean;
 
 const copy = (done) => {
   gulp.src([
-    "source/css/normalize.min.css",
+    "source/css/normalize.css",
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "!source/img/icons/*.svg"
