@@ -1,0 +1,63 @@
+//.description-wrap {
+//  //padding: 0 20px;
+//  padding-bottom: 325px;
+//}
+
+.description {
+  display: grid;
+  padding-bottom: 300px;
+
+  background-image:url("../../img/index/info_screen_3_mobile.png"), url("../../img/index/info_iphone_mobile.png"), url("../../img/index/info_back_mobile.png");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 136px 245px, 158px 320px, 100% 828px;
+  background-position: 50% 101%, 50% 106%, 0 175px;
+}
+
+
+.description__title,
+.description__subtitle {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  padding: 0 20px;
+}
+
+.description__title {
+  margin-top: 39px;
+}
+
+.description__subtitle {
+  margin-top: 11px;
+  margin-bottom: 100px;
+}
+
+.description__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
+}
+
+.description__item {
+  text-align: center;
+}
+
+.item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.item__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  padding: 0 30px;
+}
