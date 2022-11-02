@@ -9,12 +9,12 @@
   border: none;
   background-color: transparent;
 
-  @media (min-width:$tablet-width) {
-      top: 45px;
+  @media (min-width: $tablet-width) {
+    top: 45px;
   }
 
   @media (min-width: $desktop-width) {
-      display: none;
+    display: none;
   }
 }
 
