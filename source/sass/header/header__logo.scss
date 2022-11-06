@@ -1,6 +1,6 @@
 .header__wrap-logo {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
+  //display: grid;
+  //grid-template-columns: 4fr 1fr;
   width: 100%;
   box-sizing: border-box;
   padding: 0 20px;
@@ -32,12 +32,11 @@
 }
 
 .header__logo {
-  align-self: flex-start;
+  //align-self: flex-start;
   display: block;
   box-sizing: border-box;
   padding: 22px 0;
 
-  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
