@@ -43,20 +43,25 @@ html(lang="ru")
                       img(src="img/index/logo_microsoft.png" srcset="img/index/logo_microsoft@2x.png" width="43" height="47" alt="Иконка Windous")
             p.intro__text Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
     main
-      section.description
-        h2.visually-hidden Информация о приложении
-        h2.description__title Устали от серости мегаполиса?
-        h2.description__subtitle Нам есть, что вам предложить!
-        ul.description__list
-          li.description__item.item
-            h3.item__title Поднимает настроение
-            p.item__text Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          li.description__item.item
-            h3.item__title Меняет мир вокруг
-            p.item__text Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          li.description__item.item
-            h3.item__title Заводит новых друзей
-            p.item__text Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+      div.description-wrap
+        section.description
+          h2.visually-hidden Информация о приложении
+          h2.description__title Устали от серости мегаполиса?
+          h2.description__subtitle Нам есть, что вам предложить!
+          div.description__img.img
+            div.img__mood
+            div.img__world
+            div.img__friends
+          ul.description__list
+            li.description__item.item
+              h3.item__title Поднимает настроение
+              p.item__text Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            li.description__item.item
+              h3.item__title Меняет мир вокруг
+              p.item__text Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            li.description__item.item
+              h3.item__title Заводит новых друзей
+              p.item__text Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
       section
         h2.visually-hidden Отзывы о приложении
         blockquote
@@ -102,31 +107,3 @@ html(lang="ru")
             p ул. Большая Конюшенная, 19/8
         iframe(loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470375!2d30.318562737554867!3d59.93871642390735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1663844631789!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург")
     include parts/footer.pug
-
-      //Миксины
-      mixin code(title, url, anchor)
-        .container
-          p.class=title
-          a.ferd(href=url)&attributes(attributes)= anchor
-
-
-          if block
-              block
-          else
-              p Нет текста для отображения
-
-      +code("Ghbtna", ",jshgahsa", "sjdghfjshgdfe")(target="_blank" data-type="link")
-      +code("reatna", ",jshgahsa", "sjdjgagsjshgdfe")
-      +code("iuygna", ",hs24545a", "5454158fjshgdfe")
-        p это блок текста миксина
-
-      mixin numbers(id, ...items)
-        ul.numbers(id= id class="items-number")
-          each item in items
-            li= item
-
-      +numbers("num", 1,2,3,4)
-
-
-
-

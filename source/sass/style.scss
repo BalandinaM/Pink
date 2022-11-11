@@ -7,10 +7,10 @@
 //Blocks
 
 @import "body.scss";
-@import "header/wrap-header-and-intro.scss";
-@import "header/header.scss";
-@import "header/header__logo.scss";
-@import "header/header__nav.scss";
-@import "header/header__button.scss";
-@import "main/intro.scss";
+@import "wrap-header-and-intro/wrap-header-and-intro.scss";
+@import "wrap-header-and-intro/header/header.scss";
+@import "wrap-header-and-intro/header/header__logo.scss";
+@import "wrap-header-and-intro/header/header__nav.scss";
+@import "wrap-header-and-intro/header/header__button.scss";
+@import "wrap-header-and-intro/intro/intro.scss";
 @import "main/description.scss";
