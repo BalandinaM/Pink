@@ -29,10 +29,10 @@
     padding-bottom: 15px;
 
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title title"
-                        "subtitle subtitle"
-                        ". list";
-
+    grid-template-areas:
+      "title title"
+      "subtitle subtitle"
+      ". list";
     background-image: url("../../img/index/info_screen_3_tablet.png"), url("../../img/index/info_iphone_tablet.png");
     background-size: 237px 421px, 268px 547px;
     background-position: 8.2% 100%, 5% 135%;
@@ -42,10 +42,11 @@
     width: 1200px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 301px auto;
-    grid-template-areas: "title title title"
-                        "subtitle subtitle subtitle"
-                        "img img img"
-                        "list list list";
+    grid-template-areas:
+      "title title title"
+      "subtitle subtitle subtitle"
+      "img img img"
+      "list list list";
     background-image: none;
   }
 }
@@ -87,15 +88,14 @@
 
     grid-area: title;
   }
+
   @media (min-width: $desktop-width) {
     margin-top: 62px;
-
   }
-
 }
 
 .description__subtitle {
-  margin-top: 11px;
+  margin-top: 30px;
   margin-bottom: 100px;
 
   @media (min-width: $tablet-width) {

@@ -96,18 +96,38 @@
           <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p><a class="effect__link" href="#">Узнать больше об исследовании</a>
         </section>
       </div>
-      <section>
+      <section class="reviews-container">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
-        <blockquote>
-          <h3>Николай Петров</h3>
-          <p>25 лет, водитель трамвая</p>
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        <blockquote class="review">
+          <h3 class="review__author">Николай Петров <span> 25 лет, водитель трамвая </span></h3>
+          <p class="review__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
         </blockquote>
-        <div>
-          <input type="radio" name="reviews" value="reviews_1" checked>
-          <input type="radio" name="reviews" value="reviews_2">
-          <input type="radio" name="reviews" value="reviews_3">
+        <div class="review__wrap-circle-button">
+          <button class="review__circle-button review__circle-button--activ" type="button"></button>
+          <button class="review__circle-button" type="button"></button>
+          <button class="review__circle-button" type="button"></button>
         </div>
+        <button class="review__arrow-button review__arrow-button--left review__arrow-button--activ" type="button">
+          <svg width="22" height="41">
+            <use xlink:href="img/icons/sprite.svg#arrow_left"></use>
+          </svg>
+        </button>
+        <button class="review__arrow-button review__arrow-button--right" type="button">
+          <svg width="22" height="41">
+            <use xlink:href="img/icons/sprite.svg#arrow_right"></use>
+          </svg>
+        </button>
+        <!--div-->
+        <!--  input(type="radio"-->
+        <!--        name="reviews"-->
+        <!--        value="reviews_1"-->
+        <!--        checked)-->
+        <!--  input(type="radio"-->
+        <!--        name="reviews"-->
+        <!--        value="reviews_2")-->
+        <!--  input(type="radio"-->
+        <!--        name="reviews"-->
+        <!--        value="reviews_3")-->
       </section>
       <section>
         <h2 class="visually-hidden">Пакеты доступные к покупке</h2>

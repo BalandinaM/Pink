@@ -67,23 +67,32 @@ html(lang="ru")
           h2.effect__title Эффект  <br> на 24 часа!
           p.effect__text Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
           a.effect__link(href= "#") Узнать больше об исследовании
-      section
+      section.reviews-container
         h2.visually-hidden Отзывы о приложении
-        blockquote
-          h3 Николай Петров
-          p 25 лет, водитель трамвая
-          p «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        div
-          input(type="radio"
-                name="reviews"
-                value="reviews_1"
-                checked)
-          input(type="radio"
-                name="reviews"
-                value="reviews_2")
-          input(type="radio"
-                name="reviews"
-                value="reviews_3")
+        blockquote.review
+          h3.review__author Николай Петров <span> 25 лет, водитель трамвая </span>
+          p.review__text &#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
+        div.review__wrap-circle-button
+          button.review__circle-button.review__circle-button--activ(type="button")
+          button.review__circle-button(type="button")
+          button.review__circle-button(type="button")
+        button.review__arrow-button.review__arrow-button--left.review__arrow-button--activ(type="button")
+          svg(width="22" height="41")
+            use(xlink:href="img/icons/sprite.svg#arrow_left")
+        button.review__arrow-button.review__arrow-button--right(type="button")
+          svg(width="22" height="41")
+            use(xlink:href="img/icons/sprite.svg#arrow_right")
+        //div
+        //  input(type="radio"
+        //        name="reviews"
+        //        value="reviews_1"
+        //        checked)
+        //  input(type="radio"
+        //        name="reviews"
+        //        value="reviews_2")
+        //  input(type="radio"
+        //        name="reviews"
+        //        value="reviews_3")
       section
         h2.visually-hidden Пакеты доступные к покупке
         div

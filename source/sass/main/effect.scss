@@ -12,23 +12,27 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 20px;
-    padding-bottom: 67px;
+    padding-bottom: 105px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: ". title"
-                        ". text"
-                        ". link";
+    grid-template-areas:
+      ". title"
+      ". text"
+      ". link";
 
-    background-image: url("../../img/index/effect_timer_24.svg"),
-                      url("../../img/index/effect_timer_circle.svg"),
-                      url("../../img/index/effect_timer.svg");
+    background-image:
+      url("../../img/index/effect_timer_24.svg"),
+      url("../../img/index/effect_timer_circle.svg"),
+      url("../../img/index/effect_timer.svg");
     background-repeat: no-repeat;
-    background-size: 110px 75px,
-                    202px 202px,
-                    238px 276px;
-    background-position: 85px 172px,
-                        38px 109px,
-                        20px 53px;
+    background-size:
+      110px 75px,
+      202px 202px,
+      238px 276px;
+    background-position:
+      85px 172px,
+      38px 109px,
+      20px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,15 +41,18 @@
     padding-bottom: 112px;
 
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: ". title"
-                        ". text"
-                        ". link";
-    background-size: 134px 94px,
-                    252px 252px,
-                    298px 345px;
-    background-position: 215px 172px,
-                        153px 95px,
-                        130px 23px;
+    grid-template-areas:
+      ". title"
+      ". text"
+      ". link";
+    background-size:
+      134px 94px,
+      252px 252px,
+      298px 345px;
+    background-position:
+      215px 172px,
+      153px 95px,
+      130px 23px;
   }
 }
 
@@ -110,4 +117,13 @@
 
     padding-left: 57px;
   }
+}
+
+.effect__link:hover,
+.effect__link:focus {
+  color: $grey-basic;
+}
+
+.effect__link:active {
+  color: rgba($color: $grey-basic, $alpha: 0.3);
 }
