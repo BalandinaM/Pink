@@ -82,42 +82,34 @@ html(lang="ru")
         button.review__arrow-button.review__arrow-button--right(type="button")
           svg(width="22" height="41")
             use(xlink:href="img/icons/sprite.svg#arrow_right")
-        //div
-        //  input(type="radio"
-        //        name="reviews"
-        //        value="reviews_1"
-        //        checked)
-        //  input(type="radio"
-        //        name="reviews"
-        //        value="reviews_2")
-        //  input(type="radio"
-        //        name="reviews"
-        //        value="reviews_3")
-      section
-        h2.visually-hidden Пакеты доступные к покупке
-        div
-          input(type="radio"
-                name="price"
-                value="base"
-                )
-          input(type="radio"
-                name="price"
-                value="standart"
-                checked)
-          input(type="radio"
-                name="price"
-                value="anlim")
-      section
-        h2 Остались вопросы? <br> Свяжитесь с нами!
-        ul
-          li
-            h3 Звоните:
-            a(href="tel:+78125556666") +7 (812) 555-66-66
-          li
-            h3 Пишите:
-            a(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
-          li
-            h3 Приезжайте в гости:
-            p ул. Большая Конюшенная, 19/8
-        iframe(loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470375!2d30.318562737554867!3d59.93871642390735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1663844631789!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург")
+      //section
+      //  h2.visually-hidden Пакеты доступные к покупке
+      //  div
+      //    input(type="radio"
+      //          name="price"
+      //          value="base"
+      //          )
+      //    input(type="radio"
+      //          name="price"
+      //          value="standart"
+      //          checked)
+      //    input(type="radio"
+      //          name="price"
+      //          value="anlim")
+      section.contacts
+        h2.contacts__title Остались вопросы? <br> Свяжитесь с нами!
+        ul.contacts__list
+          li.contacts__item
+            h3.contacts__subtitle Звоните:
+            a.contacts__link(href="tel:+78125556666") +7 (812) 555-66-66
+          li.contacts__item.item
+            h3.contacts__subtitle Пишите:
+            a.contacts__link(href="mailto:mail@htmlacademy.ru") mail@htmlacademy.ru
+          li.contacts__item.item
+            h3.contacts__subtitle Приезжайте в гости:
+            p.contacts__text ул. Большая <br> Конюшенная, 19/8
+        svg.contacts__sveg(width="1200" height="123")
+          use(xlink:href="img/icons/sprite.svg#contacts_map_triangle")
+        iframe.contacts__map(loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037907470375!2d30.318562737554867!3d59.93871642390735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1663844631789!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург")
+
     include parts/footer.pug
