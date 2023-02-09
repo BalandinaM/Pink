@@ -103,8 +103,8 @@
           <p class="review__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</p>
         </blockquote>
         <div class="review__wrap-circle-button">
-          <button class="review__circle-button review__circle-button--activ" type="button"></button>
           <button class="review__circle-button" type="button"></button>
+          <button class="review__circle-button review__circle-button--activ" type="button"></button>
           <button class="review__circle-button" type="button"></button>
         </div>
         <button class="review__arrow-button review__arrow-button--left review__arrow-button--activ" type="button">
@@ -118,20 +118,85 @@
           </svg>
         </button>
       </section>
-      <!--section-->
-      <!--  h2.visually-hidden Пакеты доступные к покупке-->
-      <!--  div-->
-      <!--    input(type="radio"-->
-      <!--          name="price"-->
-      <!--          value="base"-->
-      <!--          )-->
-      <!--    input(type="radio"-->
-      <!--          name="price"-->
-      <!--          value="standart"-->
-      <!--          checked)-->
-      <!--    input(type="radio"-->
-      <!--          name="price"-->
-      <!--          value="anlim")-->
+      <section class="price">
+        <h2 class="visually-hidden">Пакеты доступные к покупке</h2>
+        <div class="price__input-wrap">
+          <input class="price__input visually-hidden" type="radio" name="price" value="base">
+          <input class="price__input visually-hidden" type="radio" name="price" value="standart" checked>
+          <input class="price__input visually-hidden" type="radio" name="price" value="anlim">
+          <table class="price__table table">
+            <thead>
+              <tr class="table__head head">
+                <th class="head__cell head__cell--empty" scope="col"></th>
+                <th class="head__cell" scope="col">База <span class="head__cell-price">1,99 USD</span></th>
+                <th class="head__cell" scope="col">Стандарт <span class="head__cell-price">3,99 USD</span></th>
+                <th class="head__cell" scope="col">Анлим <span class="head__cell-price">9,99 USD</span></th>
+              </tr>
+            </thead>
+            <tbody class="table__table-body table-body">
+              <tr>
+                <td class="table-body__cell table-body__cell--hidden-mobile">Розовый фильтр</td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Розовый фильтр</span>
+                  <svg class="table-body__cell_svg--on" width="31" height="21">
+                    <use xlink:href="img/icons/sprite.svg#price_check"></use>
+                  </svg>
+                </td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Розовый фильтр</span>
+                  <svg class="table-body__cell_svg--on" width="31" height="21">
+                    <use xlink:href="img/icons/sprite.svg#price_check"></use>
+                  </svg>
+                </td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Розовый фильтр</span>
+                  <svg class="table-body__cell_svg--on" width="31" height="21">
+                    <use xlink:href="img/icons/sprite.svg#price_check"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-body__cell table-body__cell--hidden-mobile">Смайлики</td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Смайлики</span>
+                  <svg class="table-body__cell_svg--off" width="27" height="27">
+                    <use xlink:href="img/icons/sprite.svg#price_cross"></use>
+                  </svg>
+                </td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Смайлики</span>
+                  <svg class="table-body__cell_svg--on" width="31" height="21">
+                    <use xlink:href="img/icons/sprite.svg#price_check"></use>
+                  </svg>
+                </td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Смайлики</span>
+                  <svg class="table-body__cell_svg--on" width="31" height="21">
+                    <use xlink:href="img/icons/sprite.svg#price_check"></use>
+                  </svg>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-body__cell table-body__cell--hidden-mobile">Комментарии</td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Комментарии</span>
+                  <svg class="table-body__cell_svg--off" width="27" height="27">
+                    <use xlink:href="img/icons/sprite.svg#price_cross"></use>
+                  </svg>
+                </td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Комментарии</span>
+                  <svg class="table-body__cell_svg--off" width="27" height="27">
+                    <use xlink:href="img/icons/sprite.svg#price_cross"></use>
+                  </svg>
+                </td>
+                <td class="table-body__cell"><span class="table-body__cell_description">Комментарии</span>
+                  <svg class="table-body__cell_svg--on" width="31" height="21">
+                    <use xlink:href="img/icons/sprite.svg#price_check"></use>
+                  </svg>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="price__wrap-toggles">
+          <label class="price__toggle" for="base"><span class="visually-hidden">Тариф "Базовый"</span></label>
+          <label class="price__toggle" for="standart"><span class="visually-hidden">Тариф "Стандарт"</span></label>
+          <label class="price__toggle" for="anlim"><span class="visually-hidden">Тариф "Анлим"</span></label>
+        </div>
+      </section>
       <section class="contacts">
         <h2 class="contacts__title">Остались вопросы? <br> Свяжитесь с нами!</h2>
         <ul class="contacts__list">

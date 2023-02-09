@@ -1,0 +1,155 @@
+.price__table {
+  //overflow: hidden;
+  border-collapse: collapse;
+  margin-top: 100px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 28px;
+  }
+}
+
+.head__cell--empty {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+  visibility: collapse;
+}
+
+.table-body__cell--hidden-mobile {
+  @media (max-width: $mobile-max-width) {
+    display: none;
+  }
+}
+
+.head__cell {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $grey-basic;
+  color: $white;
+
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.head__cell:not(:first-child):not(:last-child) {
+  border-right: 2px solid $grey-background-effect;
+}
+
+.head__cell-price {
+  display: block;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .head__cell:nth-child(2) {
+    border-top-left-radius: 5px 5px;
+  }
+
+  .head__cell:nth-child(4) {
+    border-top-right-radius: 5px 5px;
+  }
+}
+
+.table-body__cell {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $grey-basic;
+  border: 2px solid $grey-light;
+
+  box-sizing: border-box;
+  min-width: 276px;
+  height: 59px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    text-transform: none;
+
+    min-width: 153px;
+    height: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+  }
+}
+
+tr:first-child .table-body__cell:not(:first-child) {
+  border-top: none;
+}
+
+.table-body__cell_description {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.table-body__cell_svg--on {
+  fill: $green-check;
+}
+
+.table-body__cell_svg--off {
+  fill: $red;
+}
+
+.table-body__cell_svg--off,
+.table-body__cell_svg--on {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: 58px;
+  }
+}
+
+.price__wrap-toggles {
+  //position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price__toggle {
+  //content: "";
+  //position: absolute;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba($color: $grey-basic, $alpha: 0.3);
+}
+
+.price__input:checked + .price__toggle {
+  background-color: $white;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+
+  border: 3px solid $grey-basic;
+}
