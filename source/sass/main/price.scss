@@ -1,7 +1,32 @@
+.price {
+  padding-top: 137px;
+  padding-bottom: 70px;
+
+  background-image: url(../../img/index/price_back_mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 10px;
+}
+
+.price-wrap {
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 .price__table {
-  //overflow: hidden;
+  position: absolute;
+  //top: 5px;
+  //left: 50%;
+  //transform: translateX(%);
   border-collapse: collapse;
-  margin-top: 100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     margin-left: 28px;
@@ -32,7 +57,9 @@
 
   box-sizing: border-box;
   padding-top: 14px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
+
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 10px;
@@ -61,6 +88,31 @@
   }
 }
 
+.head__cell--hit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 74px;
+  background-image: url(../../img/index/price_label_hit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.head__cell--hit::after {
+  content: "Хит";
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  width: 74px;
+  height: 74px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  transform: rotate(-45deg);
+}
+
 .table-body__cell {
   font-weight: 400;
   font-size: 14px;
@@ -68,13 +120,14 @@
   text-transform: uppercase;
   color: $grey-basic;
   border: 2px solid $grey-light;
+  background-color: $white;
 
   box-sizing: border-box;
   min-width: 276px;
-  height: 59px;
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 17px;
   padding-left: 20px;
+  padding-right: 60px;
 
   position: relative;
 
@@ -127,6 +180,8 @@ tr:first-child .table-body__cell:not(:first-child) {
   align-items: center;
   justify-content: space-between;
   width: 60px;
+
+  margin-top: 325px;
 
   @media (min-width: $tablet-width) {
     display: none;

@@ -120,16 +120,24 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Пакеты доступные к покупке</h2>
-        <div class="price__input-wrap">
-          <input class="price__input visually-hidden" type="radio" name="price" value="base">
-          <input class="price__input visually-hidden" type="radio" name="price" value="standart" checked>
-          <input class="price__input visually-hidden" type="radio" name="price" value="anlim">
+        <!--div.price__input-wrap-->
+        <!--  input.price__input.visually-hidden(type="radio"-->
+        <!--        name="price"-->
+        <!--        value="base")-->
+        <!--  input.price__input.visually-hidden(type="radio"-->
+        <!--        name="price"-->
+        <!--        value="standart"-->
+        <!--        checked)-->
+        <!--  input.price__input.visually-hidden(type="radio"-->
+        <!--        name="price"-->
+        <!--        value="anlim")-->
+        <div class="price-wrap">
           <table class="price__table table">
             <thead>
               <tr class="table__head head">
                 <th class="head__cell head__cell--empty" scope="col"></th>
                 <th class="head__cell" scope="col">База <span class="head__cell-price">1,99 USD</span></th>
-                <th class="head__cell" scope="col">Стандарт <span class="head__cell-price">3,99 USD</span></th>
+                <th class="head__cell head__cell--hit" scope="col">Стандарт <span class="head__cell-price">3,99 USD</span></th>
                 <th class="head__cell" scope="col">Анлим <span class="head__cell-price">9,99 USD</span></th>
               </tr>
             </thead>
@@ -190,11 +198,11 @@
               </tr>
             </tbody>
           </table>
-        </div>
-        <div class="price__wrap-toggles">
-          <label class="price__toggle" for="base"><span class="visually-hidden">Тариф "Базовый"</span></label>
-          <label class="price__toggle" for="standart"><span class="visually-hidden">Тариф "Стандарт"</span></label>
-          <label class="price__toggle" for="anlim"><span class="visually-hidden">Тариф "Анлим"</span></label>
+          <div class="price__wrap-toggles">
+            <label class="price__toggle" for="base"><span class="visually-hidden">Тариф "Базовый"</span></label>
+            <label class="price__toggle" for="standart"><span class="visually-hidden">Тариф "Стандарт"</span></label>
+            <label class="price__toggle" for="anlim"><span class="visually-hidden">Тариф "Анлим"</span></label>
+          </div>
         </div>
       </section>
       <section class="contacts">

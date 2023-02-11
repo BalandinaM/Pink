@@ -84,23 +84,24 @@ html(lang="ru")
             use(xlink:href="img/icons/sprite.svg#arrow_right")
       section.price
         h2.visually-hidden Пакеты доступные к покупке
-        div.price__input-wrap
-          input.price__input.visually-hidden(type="radio"
-                name="price"
-                value="base")
-          input.price__input.visually-hidden(type="radio"
-                name="price"
-                value="standart"
-                checked)
-          input.price__input.visually-hidden(type="radio"
-                name="price"
-                value="anlim")
+        //div.price__input-wrap
+        //  input.price__input.visually-hidden(type="radio"
+        //        name="price"
+        //        value="base")
+        //  input.price__input.visually-hidden(type="radio"
+        //        name="price"
+        //        value="standart"
+        //        checked)
+        //  input.price__input.visually-hidden(type="radio"
+        //        name="price"
+        //        value="anlim")
+        div.price-wrap
           table.price__table.table
             thead
               tr.table__head.head
                 th.head__cell.head__cell--empty(scope="col")
                 th.head__cell(scope="col") База <span class="head__cell-price">1,99 USD</span>
-                th.head__cell(scope="col") Стандарт <span class="head__cell-price">3,99 USD</span>
+                th.head__cell.head__cell--hit(scope="col") Стандарт <span class="head__cell-price">3,99 USD</span>
                 th.head__cell(scope="col") Анлим <span class="head__cell-price">9,99 USD</span>
             tbody.table__table-body.table-body
               tr
@@ -145,13 +146,13 @@ html(lang="ru")
                   span.table-body__cell_description Комментарии
                   svg.table-body__cell_svg--on(width="31" height="21")
                     use(xlink:href="img/icons/sprite.svg#price_check")
-        div.price__wrap-toggles
-          label.price__toggle(for="base")
-            span.visually-hidden Тариф "Базовый"
-          label.price__toggle(for="standart")
-            span.visually-hidden Тариф "Стандарт"
-          label.price__toggle(for="anlim")
-            span.visually-hidden Тариф "Анлим"
+          div.price__wrap-toggles
+             label.price__toggle(for="base")
+               span.visually-hidden Тариф "Базовый"
+             label.price__toggle(for="standart")
+               span.visually-hidden Тариф "Стандарт"
+             label.price__toggle(for="anlim")
+               span.visually-hidden Тариф "Анлим"
       section.contacts
         h2.contacts__title Остались вопросы? <br> Свяжитесь с нами!
         ul.contacts__list
