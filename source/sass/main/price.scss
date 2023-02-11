@@ -1,6 +1,6 @@
 .price {
   padding-top: 137px;
-  padding-bottom: 70px;
+  padding-bottom: 47px;
 
   background-image: url(../../img/index/price_back_mobile.png);
   background-repeat: no-repeat;
@@ -172,7 +172,7 @@ tr:first-child .table-body__cell:not(:first-child) {
   }
 }
 
-.price__wrap-toggles {
+.price__wrap-circle-button {
   //position: relative;
 
   display: flex;
@@ -181,7 +181,7 @@ tr:first-child .table-body__cell:not(:first-child) {
   justify-content: space-between;
   width: 60px;
 
-  margin-top: 325px;
+  margin-top: 320px;
 
   @media (min-width: $tablet-width) {
     display: none;
