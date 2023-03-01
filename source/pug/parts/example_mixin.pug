@@ -1,0 +1,17 @@
+//mixin posts(url, image , name, time, text, likes)
+              li
+                a(href=url)
+                    img(src=image)&attributes(attributes)
+                p=name
+                span=time
+                p=text
+                span=likes
+
+            //ul
+              +posts("#", "../img/index/info_back_desktop.png", "Анна", "(5 минут назад)", "Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!", "Нравится: 215")(width="320" height="137")
+              +posts("#", "../img/index/info_back_desktop.png", "Левон", "(5 часов назад)", "Вчера он на луну летал, сегодня в руки к нам попал.", "Нравится: 356")(width="280" height="180")
+              +posts("#", "../img/index/info_back_desktop.png", "Антон", "(12 часов назад)", "Соседи будут рады!", "Нравится: 666")(width="280" height="180")
+              +posts("#", "../img/index/info_back_desktop.png", "Борис", "(20 часов назад)", "Здесь могла быть ваша цитата о высоком и вечном.", "Нравится: 215")(width="280" height="180")
+              +posts("#", "../img/index/info_back_desktop.png", "Сергей", "(25 часов назад)", "Самая кубанская в мире!", "Нравится: 4")(width="280" height="180")
+              +posts("#", "../img/index/info_back_desktop.png", "Максим", "(40 часов назад)", "Где снег-то?", "Нравится: 150")(width="280" height="180")
+              +posts("#", "../img/index/info_back_desktop.png", "Надежда", "(45 часов назад)", "Всем GM и взаимные лайки!", "Нравится: 2560")(width="280" height="180")

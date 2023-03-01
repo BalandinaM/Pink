@@ -19,6 +19,8 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+
+    margin-top: 65px;
   }
 }
 
@@ -46,10 +48,11 @@
 
 //.contacts__list::after {
 //  content: "";
-//  width: 1439px;
-//  height: 123px;
+//  width: auto;
+//  height: auto;
 //  position: absolute;
 //  background-image: url("../../img/index/map_triangle.svg");
+//  background-size: cover;
 //  top: 150px;
 //  z-index: 1;
 //}
