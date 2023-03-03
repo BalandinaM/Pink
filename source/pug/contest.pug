@@ -1,0 +1,60 @@
+doctype html
+html(lang="ru")
+  include parts/head.pug
+  body.body
+    div.wrap-header-and-intro
+      include parts/header.pug
+      h1.contest__title Конкурс на самое безбашенное путешествие с Пинк
+    main
+      section
+        h2.contest__subtitle Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        form.contest__form.form(action="https://echo.htmlacademy.ru" method="get")
+          fieldset.form__user-name.user-name
+            div.user-name__input-wrap
+              label.user-name__label(for="surname") Фамилия:
+              input.user-name__input(type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required)
+            div.user-name__input-wrap
+              label.user-name__label(for="name") Имя:
+              input.user-name__input(type="text" id="name" name="name" placeholder="Укажите имя *" required)
+            div.user-name__input-wrap
+              label.user-name__label(for="patronymic") Отчество:
+              input.user-name__input(type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже")
+          fieldset.form__progress.progress
+            legend.progress__title Ваши безбашенные достижения в путешествии
+            input.progress__input(type="checkbox", name="selfie" id="selfie" checked)
+            label.progress__label(for="selfie") Сделал селфи с акулой
+            input.progress__input(type="checkbox", name="tan" id="tan" checked)
+            label.progress__label(for="tan") Обгорел на пляже
+            input.progress__input(type="checkbox", name="chuck" id="chuck")
+            label.progress__label(for="chuck") Видел Чака Норриса
+            input.progress__input(type="checkbox", name="souvenirs" id="souvenirs")
+            label.progress__label(for="souvenirs") Накупил сувениров
+            input.progress__input(type="checkbox", name="tower" id="tower" checked)
+            label.progress__label(for="tower") Удержал башню
+            input.progress__input(type="checkbox", name="hotel" id="hotel")
+            label.progress__label(for="hotel") Разгромил отель
+          fieldset.form__contacts.contacts
+            div.contacts__input-wrap
+              label.contacts__label(for="phone") Номер телефона
+              input.contacts__input(type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required)
+            div.contacts__input-wrap
+              label.contacts__label(for="email") Адрес почты
+              input.contacts__input(type="email" id="email" name="email" placeholder="Введите почту *")
+          fieldset.form__app.app
+            legend.app__title С каким приложением путешествовали?
+            input.app__input(type="radio", name="app" id="ios" value="ios" checked)
+            label.app__label(for="ios") Pink для iOS
+            input.app__input(type="radio", name="app" id="android" value="android")
+            label.app__label(for="android") Pink на Android
+            input.app__input(type="radio", name="app" id="windows" value="windows")
+            label.app__label(for="windows") Windows Phone
+          fieldset.form__emotion.emotion
+            legend.emotion__title Опишите свои эмоции
+            label.emotion__label(for="emotion")
+            textarea(name="emotion" id="emotion", cols="30", rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях")
+          div.form__wrap-button
+            button.form__button(type="submint") Отправить форму
+            span.form__notice * &#8212; Обязательные поля
+    include parts/footer.pug
+
+
