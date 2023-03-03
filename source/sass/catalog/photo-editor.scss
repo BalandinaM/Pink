@@ -21,6 +21,10 @@
     width: 660px;
     margin: 62px auto 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .photo-editor__wrap {
@@ -37,6 +41,13 @@
     column-gap: 20px;
     grid-template-columns: repeat(2, 300px);
     grid-template-areas: "img editor" "img button";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -104,6 +115,10 @@
     width: max-content;
     margin-top: 41px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 55px;
+  }
 }
 
 .photo-editor__wrap-range {
@@ -113,6 +128,10 @@
     padding-left: 80px;
     padding-right: 20px;
     position: relative;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 35px;
   }
 }
 
@@ -161,6 +180,33 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .photo-editor__wrap-range--crop::before {
+    width: 44px;
+    height: 44px;
+    background-size: 44px 44px;
+    position: absolute;
+    top: -22px;
+    left: -12px;
+  }
+
+  .photo-editor__wrap-range--fill::before {
+    width: 48px;
+    height: 43px;
+    background-size: 48px 43px;
+    top: -22px;
+    left: -12px;
+  }
+
+  .photo-editor__wrap-range--contrast::before {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    top: -18  px;
+    left: -6px;
+  }
+}
+
 .photo-editor__scale {
   width: 240px;
   height: 2px;
@@ -174,6 +220,10 @@
     margin-top: 35px;
     margin-bottom: 35px;
     width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
   }
 }
 
@@ -214,6 +264,14 @@
 
     padding-top: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items:flex-end;
+    padding-left: 0;
+    margin-right: 30px;
+    gap: 44px;
+  }
 }
 
 .photo-editor__button {
@@ -227,6 +285,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 42px
   }
 }
 
@@ -248,6 +310,10 @@
 .photo-editor__button--reset {
   color: rgba($color: $grey-basic, $alpha: 0.1);
   border: 3px solid rgba($color: $grey-basic, $alpha: 0.1);
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 55px
+  }
 }
 
 .photo-editor__button--reset:hover {

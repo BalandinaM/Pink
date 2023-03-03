@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     width: 660px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .user-photo__title {
@@ -22,6 +26,10 @@
     line-height: 30px;
     padding: 90px 20px 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 130px;
+  }
 }
 
 .user-photo__list {
@@ -33,6 +41,12 @@
     grid-template-columns: 1fr 1fr;
     width: 620px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    width: 940px;
+    row-gap: 54px;
   }
 }
 
@@ -63,6 +77,10 @@
     top: 55px;
     right: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+  }
 }
 
 .user-photo__top-photo {
@@ -83,6 +101,11 @@
     width: 660px;
     height: 509px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 506px;
+  }
 }
 
 .user-photo__img {
@@ -95,13 +118,17 @@
     width: 300px;
     height: 300px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 .top-photo__wrap-description,
 .user-photo__wrap-description {
   width: 280px;
   margin: 0 auto;
-  //margin-bottom: 21px;
   background-color: $grey-background-effect;
   box-sizing: border-box;
   padding-top: 17px;
@@ -115,6 +142,10 @@
     width: 620px;
     padding: 20px 30px 18px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
