@@ -1,0 +1,20 @@
+.form__emotion {
+  @media (min-width: $tablet-width) {
+    grid-area: emotion;
+  }
+}
+
+.emotion__title {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.emotion__textarea {
+  border: 2px solid $grey-light;
+  border-radius: 1px;
+  padding: 13px 20px;
+  box-sizing: border-box;
+  width: 280px;
+}

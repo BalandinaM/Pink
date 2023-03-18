@@ -10,51 +10,51 @@ html(lang="ru")
         h2.contest__subtitle Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           span Пожалуйста, заполните форму ниже:
         form.contest__form.form(action="https://echo.htmlacademy.ru" method="get")
-          fieldset.form__user-name.user-name
+          fieldset.fieldset.form__user-name.user-name
             div.user-name__input-wrap
-              label.user-name__label(for="surname") Фамилия:
-              input.user-name__input(type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required)
+              label.fieldset-title.user-name__label(for="surname") Фамилия:
+              input.fieldset-text.user-name__input(type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required)
             div.user-name__input-wrap
-              label.user-name__label(for="name") Имя:
-              input.user-name__input(type="text" id="name" name="name" placeholder="Введите ваше имя *" required)
+              label.fieldset-title.user-name__label(for="name") Имя:
+              input.fieldset-text.user-name__input(type="text" id="name" name="name" placeholder="Введите ваше имя *" required)
             div.user-name__input-wrap
-              label.user-name__label(for="patronymic") Отчество:
-              input.user-name__input(type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже")
-          fieldset.form__progress.progress
-            legend.progress__title Ваши безбашенные <br> достижения в путешествии
+              label.fieldset-title.user-name__label(for="patronymic") Отчество:
+              input.fieldset-text.user-name__input(type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже")
+          fieldset.fieldset.fieldset--grey-background.form__progress.progress
+            legend.fieldset-title.progress__title Ваши безбашенные <br> достижения в путешествии
             input.progress__input.visually-hidden(type="checkbox", name="selfie" id="selfie" checked)
-            label.progress__label(for="selfie") Сделал селфи с акулой
+            label.fieldset-text.progress__label(for="selfie") Сделал селфи с акулой
             input.progress__input.visually-hidden(type="checkbox", name="tan" id="tan" checked)
-            label.progress__label(for="tan") Обгорел на пляже
+            label.fieldset-text.progress__label(for="tan") Обгорел на пляже
             input.progress__input.visually-hidden(type="checkbox", name="chuck" id="chuck")
-            label.progress__label(for="chuck") Видел Чака Норриса
+            label.fieldset-text.progress__label(for="chuck") Видел Чака Норриса
             input.progress__input.visually-hidden(type="checkbox", name="souvenirs" id="souvenirs")
-            label.progress__label(for="souvenirs") Накупил сувениров
+            label.fieldset-text.progress__label(for="souvenirs") Накупил сувениров
             input.progress__input.visually-hidden(type="checkbox", name="tower" id="tower" checked)
-            label.progress__label(for="tower") Удержал башню
+            label.fieldset-text.progress__label(for="tower") Удержал башню
             input.progress__input.visually-hidden(type="checkbox", name="hotel" id="hotel")
-            label.progress__label(for="hotel") Разгромил отель
-          fieldset.form__contacts.contacts
-            legend.contacts__title Контактная информация
+            label.fieldset-text.progress__label(for="hotel") Разгромил отель
+          fieldset.fieldset.form__contacts.contacts
+            legend.fieldset-title.contacts__title Контактная информация
             div.contacts__input-wrap
-              label.contacts__label(for="phone") Номер телефона
-              input.contacts__input(type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required)
+              label.fieldset-title.contacts__label(for="phone") Номер телефона
+              input.fieldset-text.contacts__input(type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required)
             div.contacts__input-wrap
-              label.contacts__label(for="email") Адрес почты
-              input.contacts__input(type="email" id="email" name="email" placeholder="Введите почту *")
-          fieldset.form__app.app
-            legend.app__title С каким приложением путешествовали?
+              label.fieldset-title.contacts__label(for="email") Адрес почты
+              input.fieldset-text.contacts__input(type="email" id="email" name="email" placeholder="Введите почту *")
+          fieldset.fieldset.fieldset--grey-background.form__app.app
+            legend.fieldset-title.app__title С каким приложением путешествовали?
             input.app__input.visually-hidden(type="radio", name="app" id="ios" value="ios" checked)
-            label.app__label(for="ios") Pink для iOS
+            label.fieldset-text.app__label(for="ios") Pink для iOS
             input.app__input.visually-hidden(type="radio", name="app" id="android" value="android")
-            label.app__label(for="android") Pink на Android
+            label.fieldset-text.app__label(for="android") Pink на Android
             input.app__input.visually-hidden(type="radio", name="app" id="windows" value="windows")
-            label.app__label(for="windows") Windows Phone
-          fieldset.form__emotion.emotion
-            legend.emotion__title Опишите свои эмоции
+            label.fieldset-text.app__label(for="windows") Windows Phone
+          fieldset.fieldset.form__emotion.emotion
+            legend.fieldset-title.emotion__title Опишите свои эмоции
             label.emotion__label(for="emotion")
-            textarea.emotion__textarea(name="emotion" id="emotion", cols="30", rows="9" placeholder="Можно прям в красках, не стесняясь в выражениях")
-          div.form__wrap-button
+            textarea.fieldset-text.emotion__textarea(name="emotion" id="emotion", cols="30", rows="9" placeholder="Можно прям в красках, не стесняясь в выражениях")
+          div.form__wrap-button-and-notice
             button.form__button(type="submint") Отправить форму
             span.form__notice * &#8212; Обязательные поля
     include parts/footer.pug

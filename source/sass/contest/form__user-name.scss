@@ -1,0 +1,48 @@
+.form__user-name {
+  @media (min-width: $tablet-width) {
+  grid-area: name;
+  padding-bottom: 5px;
+  }
+}
+
+.user-name__input-wrap {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: baseline;
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.user-name__input {
+  padding: 20px 20px;
+  border: 2px solid $grey-light;
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    flex: 1 1 auto;
+  }
+}
+
+.user-name__input:hover {
+  border: 2px solid $grey-basic;
+}
+
+.user-name__input:active {
+  border: 2px solid $pink-basic;
+}
+
+
+.user-name__label {
+  padding: 19px 25px 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+}
+

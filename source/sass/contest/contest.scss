@@ -1,4 +1,6 @@
-.contest__title {
+//Перенесено в contest2
+
+/*.contest__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -54,9 +56,11 @@
   @media (min-width: $tablet-width) {
     grid-template-areas: "name" "app" "contacts" "progress" "emotion";
   }
-}
+}*/
 
-.form__user-name,
+//Перенесено в contest2 c классом fieldset
+
+/*.form__user-name,
 .form__contacts,
 .form__emotion,
 .form__wrap-button {
@@ -70,23 +74,23 @@
   @media (min-width: $tablet-width) {
     width: 620px;
   }
-}
+}*/
 
-.form__user-name {
+/*.form__user-name {
   @media (min-width: $tablet-width) {
   grid-area: name;
 
   padding-bottom: 5px;
   }
-}
+}*/
 
-.user-name__input-wrap,
+/*.user-name__input-wrap,
 .contacts__input-wrap {
   display: flex;
   flex-direction: column;
-}
+}*/
 
-.user-name__input-wrap {
+/*.user-name__input-wrap {
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: baseline;
@@ -94,9 +98,11 @@
     flex-shrink: 0;
     margin-bottom: 50px;
   }
-}
+}*/
 
-.user-name__input::placeholder,
+//перенесено в contest с классом text
+
+/*.user-name__input::placeholder,
 .progress__label,
 .contacts__input::placeholder,
 .app__label,
@@ -106,9 +112,11 @@
   line-height: 30px;
   align-items: center;
   color: $grey-basic;
-}
+}*/
 
-.user-name__label,
+//перенесено в contest с классом .fieldset-title
+
+/*.user-name__label,
 .contacts__title,
 .progress__title,
 .contacts__label,
@@ -120,22 +128,22 @@
   align-items: center;
   color: $pink-basic;
   text-transform: uppercase;
-}
+}*/
 
-.user-name__input,
+/*.user-name__input,
 .contacts__input {
   padding: 20px 20px;
   border: 2px solid $grey-light;
   border-radius: 1px;
-}
+}*/
 
-.user-name__input {
+/*.user-name__input {
   @media (min-width: $tablet-width) {
     flex: 1 1 auto;
   }
-}
+}*/
 
-.user-name__input:hover,
+/*.user-name__input:hover,
 .contacts__input:hover,
 .emotion__textarea:hover {
   border: 2px solid $grey-basic;
@@ -158,9 +166,11 @@
     padding-left: 0px;
     padding-right: 20px;
   }
-}
+}*/
 
-.form__progress,
+//Перенесено в contest с классом fieldset--grey-background
+
+/*.form__progress,
 .form__app {
   display: flex;
   flex-direction: column;
@@ -180,15 +190,15 @@
     width: 620px;
     margin: 0 auto;
   }
-}
+}*/
 
-.form__progress {
+/*.form__progress {
   @media (min-width: $tablet-width) {
     grid-area: progress;
   }
-}
+}*/
 
-.contacts__title,
+/*.contacts__title,
 .progress__title,
 .app__title {
   @media (max-width: $mobile-max-width) {
@@ -208,15 +218,15 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-}
+}*/
 
-.contacts__title {
+/*.contacts__title {
   @media (max-width: $mobile-max-width) {
     display: none;
   }
-}
+}*/
 
-.progress__label {
+/*.progress__label {
   width: 280px;
   margin: 0 auto;
   padding-bottom: 52px;
@@ -262,9 +272,9 @@
 
 .progress__input:active:checked + .progress__label::before {
   border: 2px solid $pink-basic;
-}
+}*/
 
-.form__contacts {
+/*.form__contacts {
   @media (min-width: $tablet-width) {
     grid-area: contacts;
 
@@ -272,9 +282,9 @@
     border: 2px solid $grey-light;
     padding-bottom: 42px;
   }
-}
+}*/
 
-.form__app {
+/*.form__app {
   @media (min-width: $tablet-width) {
     grid-area: app;
 
@@ -283,9 +293,9 @@
     padding-bottom: 8px;
     margin-bottom: 52px;
   }
-}
+}*/
 
-.app__label {
+/*.app__label {
   width: 280px;
   margin: 0 auto;
   padding-bottom: 47px;
@@ -333,9 +343,9 @@
 
 .app__input:active:checked + .app__label::before {
   border: 2px solid $pink-basic;
-}
+}*/
 
-.form__emotion {
+/*.form__emotion {
   @media (min-width: $tablet-width) {
     grid-area: emotion;
   }
@@ -354,9 +364,9 @@
   padding: 13px 20px;
   box-sizing: border-box;
   width: 280px;
-}
+}*/
 
-.form__wrap-button {
+/*.form__wrap-button {
   align-items: center;
   padding-top: 18px;
   padding-bottom: 16px;
@@ -393,12 +403,12 @@
   background: $grey-light;
   border: 2px solid $grey-light;
   color: $white;
-}
+}*/
 
-.form__notice {
+/*.form__notice {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   margin-top: 37px;
-}
+}*/

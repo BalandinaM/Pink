@@ -1,0 +1,42 @@
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    grid-area: contacts;
+
+    box-sizing: border-box;
+    border: 2px solid $grey-light;
+    padding-bottom: 42px;
+  }
+}
+
+.contacts__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.contacts__input {
+  padding: 20px 20px;
+  border: 2px solid $grey-light;
+  border-radius: 1px;
+}
+
+.contacts__input:hover {
+  border: 2px solid $grey-basic;
+}
+
+.contacts__input:active {
+  border: 2px solid $pink-basic;
+}
+
+.contacts__label {
+  padding: 19px 25px 6px;
+}
+
