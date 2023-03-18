@@ -8,6 +8,7 @@ html(lang="ru")
     main
       section
         h2.contest__subtitle Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          span Пожалуйста, заполните форму ниже:
         form.contest__form.form(action="https://echo.htmlacademy.ru" method="get")
           fieldset.form__user-name.user-name
             div.user-name__input-wrap
@@ -34,6 +35,7 @@ html(lang="ru")
             input.progress__input.visually-hidden(type="checkbox", name="hotel" id="hotel")
             label.progress__label(for="hotel") Разгромил отель
           fieldset.form__contacts.contacts
+            legend.contacts__title Контактная информация
             div.contacts__input-wrap
               label.contacts__label(for="phone") Номер телефона
               input.contacts__input(type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required)
