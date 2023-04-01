@@ -7,7 +7,7 @@
 
     box-sizing: border-box;
     border: 2px solid $grey-light;
-    padding-bottom: 42px;
+    padding: 0 60px 0;
   }
 }
 
@@ -19,11 +19,18 @@
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 28px;
   }
 }
 
 .contacts__input-wrap {
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 28px;
+  }
 }
 
 .contacts__input {
@@ -43,5 +50,11 @@
 .contacts__label {
   display: inline-block;
   padding: 0 25px 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    padding-left: 17px;
+    padding-bottom: 0;
+  }
 }
 
