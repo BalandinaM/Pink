@@ -9,7 +9,7 @@
     grid-area: app;
 
     border: 2px solid $grey-light;
-    padding-top: 42px;
+    padding-top: 48px;
     padding-bottom: 8px;
     margin-bottom: 52px;
   }
@@ -62,6 +62,10 @@
   border-radius: 50%;
   top: -6px;
   left: 0px;
+
+  @media (min-width: $tablet-width) {
+    left: 40px;
+  }
 }
 
 .app__input:checked + .app__label::after {
@@ -73,6 +77,10 @@
   border-radius: 50%;
   left: 13px;
   top: 7px;
+
+  @media (min-width: $tablet-width) {
+    left: 53px;
+  }
 }
 
 .app__input:hover + .app__label::before {
