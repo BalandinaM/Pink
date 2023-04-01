@@ -1,7 +1,9 @@
-.form__wrap-button-and-notice{
+.form__wrap-button-and-notice {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding-top: 18px;
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
 .form__button {

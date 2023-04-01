@@ -1,7 +1,7 @@
 .form__user-name {
   @media (min-width: $tablet-width) {
-  grid-area: name;
-  padding-bottom: 5px;
+    grid-area: name;
+    padding-bottom: 5px;
   }
 }
 
@@ -19,7 +19,7 @@
 }
 
 .user-name__input {
-  padding: 20px 20px;
+  padding: 15px 20px;
   border: 2px solid $grey-light;
   border-radius: 1px;
 

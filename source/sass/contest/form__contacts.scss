@@ -22,8 +22,12 @@
   }
 }
 
+.contacts__input-wrap {
+  padding-bottom: 15px;
+}
+
 .contacts__input {
-  padding: 20px 20px;
+  padding: 15px 20px;
   border: 2px solid $grey-light;
   border-radius: 1px;
 }
@@ -37,6 +41,7 @@
 }
 
 .contacts__label {
-  padding: 19px 25px 6px;
+  display: inline-block;
+  padding: 0 25px 6px;
 }
 

@@ -1,5 +1,11 @@
 .form__app {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
   @media (min-width: $tablet-width) {
+    width: 620px;
+    background-color: $white;
     grid-area: app;
 
     border: 2px solid $grey-light;
@@ -21,8 +27,10 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: inline-block;
+    width: 380px;
+    position: relative;
+    top: 0px;
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
@@ -53,7 +61,7 @@
   border: 2px solid $grey-light;
   border-radius: 50%;
   top: -6px;
-  left: 40px;
+  left: 0px;
 }
 
 .app__input:checked + .app__label::after {
@@ -63,7 +71,7 @@
   height: 15px;
   background-color: $pink-basic;
   border-radius: 50%;
-  left: 53px;
+  left: 13px;
   top: 7px;
 }
 
