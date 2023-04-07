@@ -64,11 +64,17 @@
             <legend class="fieldset-title contacts__title">Контактная информация</legend>
             <div class="contacts__input-wrap">
               <label class="fieldset-title contacts__label" for="phone">Номер телефона</label>
-              <input class="fieldset-text contacts__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required>
+              <input class="fieldset-text contacts__input input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required>
+              <svg class="input__svg input__svg--phone" width="20" height="19" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#icon_phone"></use>
+              </svg>
             </div>
             <div class="contacts__input-wrap">
               <label class="fieldset-title contacts__label" for="email">Адрес почты</label>
-              <input class="fieldset-text contacts__input" type="email" id="email" name="email" placeholder="Введите почту *">
+              <input class="fieldset-text contacts__input input" type="email" id="email" name="email" placeholder="Введите почту *">
+              <svg class="input__svg input__svg--mail" width="18" height="13" aria-hidden="true" focusable="false">
+                <use xlink:href="img/icons/sprite.svg#icon_mail"></use>
+              </svg>
             </div>
           </fieldset>
           <fieldset class="fieldset fieldset--grey-background form__app app">

@@ -33,10 +33,22 @@
   }
 }
 
+.contacts__label {
+  display: inline-block;
+  padding: 0 25px 6px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    padding-left: 17px;
+    padding-bottom: 0;
+  }
+}
+
 .contacts__input {
   padding: 15px 20px;
   border: 2px solid $grey-light;
   border-radius: 1px;
+  position: relative;
 }
 
 .contacts__input:hover {
@@ -47,14 +59,13 @@
   border: 2px solid $pink-basic;
 }
 
-.contacts__label {
-  display: inline-block;
-  padding: 0 25px 6px;
+.input__svg {
+  display: none;
 
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
-    padding-left: 17px;
-    padding-bottom: 0;
+    display: block;
+    position: absolute;
+    fill: $pink-basic;
   }
 }
 
