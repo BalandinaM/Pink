@@ -5,7 +5,13 @@
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
+    width: 620px;
+    background-color: $white;
     grid-area: progress;
+
+    border: 2px solid $grey-light;
+    padding-top: 49px;
+    margin-bottom: 38px;
   }
 }
 
@@ -22,12 +28,19 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    top: 0;
     display: inline-block;
     text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 436px;
+    padding-left: 31px;
+    padding-right: 31px;
+
+    br {
+      display: none;
+    }
   }
 }
+
 
 .progress__label {
   width: 280px;
@@ -40,7 +53,7 @@
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding-right: 119px;
+    padding-left: 120px;
   }
 }
 
@@ -52,7 +65,7 @@
   background-color: $white;
   border: 2px solid $grey-light;
   top: -5px;
-  left: 0;
+  left: 60px;
 }
 
 .progress__input:checked + .progress__label::after {
@@ -61,8 +74,8 @@
   width: 22px;
   height: 16px;
   background-image: url(../img/contest/check.svg);
-  left: 10px;
-  top: 5px;
+  left: 69px;
+  top: 6px;
 }
 
 .progress__input:hover + .progress__label::before {
