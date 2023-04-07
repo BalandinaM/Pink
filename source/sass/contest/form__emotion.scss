@@ -1,6 +1,12 @@
 .form__emotion {
   @media (min-width: $tablet-width) {
+    width: 620px;
+    background-color: $white;
     grid-area: emotion;
+
+    border: 2px solid $grey-light;
+    padding: 20px 0 55px;
+    margin-bottom: 50px;
   }
 }
 
@@ -9,6 +15,11 @@
   margin: 0 auto;
   padding-top: 15px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
 }
 
 .emotion__textarea {
@@ -18,4 +29,10 @@
   box-sizing: border-box;
   width: 280px;
   height: 197px;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    height: 189px;
+    margin: 0 auto;
+  }
 }
