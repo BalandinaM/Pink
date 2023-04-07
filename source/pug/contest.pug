@@ -39,13 +39,15 @@ html(lang="ru")
             div.contacts__input-wrap
               label.fieldset-title.contacts__label(for="phone") Номер телефона
               input.fieldset-text.contacts__input.input(type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" required)
-              svg.input__svg.input__svg--phone(width="20" height="19" aria-hidden="true" focusable="false")
-                use(xlink:href="img/icons/sprite.svg#icon_phone")
+              div.wrap-svg
+                svg.input__svg.input__svg--phone(width="20" height="19" aria-hidden="true" focusable="false")
+                  use(xlink:href="img/icons/sprite.svg#icon_phone")
             div.contacts__input-wrap
               label.fieldset-title.contacts__label(for="email") Адрес почты
               input.fieldset-text.contacts__input.input(type="email" id="email" name="email" placeholder="Введите почту *")
-              svg.input__svg.input__svg--mail(width="18" height="13" aria-hidden="true" focusable="false")
-                use(xlink:href="img/icons/sprite.svg#icon_mail")
+              div.wrap-svg
+                svg.input__svg.input__svg--mail(width="18" height="13" aria-hidden="true" focusable="false")
+                  use(xlink:href="img/icons/sprite.svg#icon_mail")
           fieldset.fieldset.fieldset--grey-background.form__app.app
             legend.fieldset-title.app__title С каким приложением путешествовали?
             input.app__input.visually-hidden(type="radio", name="app" id="ios" value="ios" checked)
