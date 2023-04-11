@@ -3,6 +3,12 @@
     grid-area: name;
     padding-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 12px;
+    width: 433px;
+  }
 }
 
 .user-name__input-wrap {

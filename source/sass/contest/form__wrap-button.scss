@@ -11,6 +11,10 @@
     width: 620px;
     margin: 0 auto 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: button;
+  }
 }
 
 .form__button {

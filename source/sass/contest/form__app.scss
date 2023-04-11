@@ -13,6 +13,10 @@
     padding-bottom: 8px;
     margin-bottom: 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 433px;
+  }
 }
 
 .app__title {
@@ -50,6 +54,11 @@
     width: 580px;
     padding-left: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    padding-left: 56px;
+  }
 }
 
 .app__label::before {
@@ -66,6 +75,10 @@
   @media (min-width: $tablet-width) {
     left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    left: -5px;
+  }
 }
 
 .app__input:checked + .app__label::after {
@@ -80,6 +93,10 @@
 
   @media (min-width: $tablet-width) {
     left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 8px;
   }
 }
 

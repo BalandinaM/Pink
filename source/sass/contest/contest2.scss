@@ -55,22 +55,28 @@
   @media (min-width: $desktop-width) {
     padding: 0;
     width: 760px;
+    margin-bottom: 75px;
   }
 }
-
-//.contest__subtitle span {
-//
-//
-//  @media (min-width: $tablet-width) {
-//
-//  }
-//}
 
 .contest__form {
   display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "name" "app" "contacts" "progress" "emotion";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name app"
+                        "contacts contacts"
+                        "progress progress"
+                        "emotion emotion"
+                        "button button";
+    column-gap: 74px;
+    justify-items: stretch;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
