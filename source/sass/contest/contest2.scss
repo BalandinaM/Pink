@@ -17,6 +17,11 @@
     margin-top: 65px;
     margin-bottom: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin-bottom: 83px;
+  }
 }
 
 .contest__subtitle {
@@ -30,6 +35,10 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  span {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
@@ -37,16 +46,25 @@
     width: 490px;
     margin-top: 90px;
     margin-bottom: 70px;
+
+    span {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 760px;
   }
 }
 
-.contest__subtitle span {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
+//.contest__subtitle span {
+//
+//
+//  @media (min-width: $tablet-width) {
+//
+//  }
+//}
 
 .contest__form {
   display: grid;
