@@ -10,6 +10,13 @@
     padding: 0 60px 0;
     margin-bottom: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 74px;
+  }
 }
 
 .contacts__title {
@@ -32,6 +39,11 @@
     flex-direction: column-reverse;
     padding-bottom: 28px;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    padding-bottom: 8px;
   }
 }
 
