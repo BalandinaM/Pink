@@ -6,7 +6,13 @@
 
     border: 2px solid $grey-light;
     padding: 20px 0 55px;
-    margin-bottom: 50px;
+    margin-bottom:
+    50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding-bottom: 50px;
   }
 }
 
@@ -34,5 +40,10 @@
     width: 496px;
     height: 189px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+    height: 124px;
   }
 }
