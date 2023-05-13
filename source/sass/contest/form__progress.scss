@@ -86,7 +86,12 @@
   background-color: $white;
   border: 2px solid $grey-light;
   top: -5px;
-  left: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: -5px;
+    left: 60px;
+  }
 }
 
 .progress__input:checked + .progress__label::after {
