@@ -13,7 +13,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 940px;
     grid-area: button;
+    padding-top: 12px;
   }
 }
 
@@ -64,5 +66,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0px;
+  }
+}
+
+.form__notice--hidden {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
