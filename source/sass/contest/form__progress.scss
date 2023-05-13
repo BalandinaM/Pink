@@ -13,6 +13,21 @@
     padding-top: 49px;
     margin-bottom: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    //display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    //grid-template-rows: auto;
+    //column-gap: 56px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    padding: 48px 4px 8px 60px;
+    //padding-left: 62px;
+    //padding-right: 62px;
+  }
 }
 
 .progress__title {
@@ -54,6 +69,12 @@
   @media (min-width: $tablet-width) {
     width: 620px;
     padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    margin: 0;
+    padding-left: 57px;
   }
 }
 
