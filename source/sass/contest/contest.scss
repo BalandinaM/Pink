@@ -1,6 +1,4 @@
-//Перенесено в contest2
-
-/*.contest__title {
+.contest__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -19,6 +17,13 @@
     margin-top: 65px;
     margin-bottom: 62px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin-bottom: 83px;
+    padding-left: 0;
+    padding-right:0;
+  }
 }
 
 .contest__subtitle {
@@ -32,6 +37,10 @@
   padding-left: 20px;
   padding-right: 20px;
 
+  span {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
@@ -39,14 +48,16 @@
     width: 490px;
     margin-top: 90px;
     margin-bottom: 70px;
+
+    span {
+      display: inline;
+    }
   }
-}
 
-.contest__subtitle span {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 760px;
+    margin-bottom: 75px;
   }
 }
 
@@ -56,14 +67,22 @@
   @media (min-width: $tablet-width) {
     grid-template-areas: "name" "app" "contacts" "progress" "emotion";
   }
-}*/
 
-//Перенесено в contest2 c классом fieldset
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "name app"
+                        "contacts contacts"
+                        "progress progress"
+                        "emotion emotion"
+                        "button button";
+    column-gap: 74px;
+    justify-items: stretch;
+    width: 940px;
+    margin: 0 auto;
+  }
+}
 
-/*.form__user-name,
-.form__contacts,
-.form__emotion,
-.form__wrap-button {
+.fieldset {
   border: none;
   display: flex;
   flex-direction: column;
@@ -74,341 +93,37 @@
   @media (min-width: $tablet-width) {
     width: 620px;
   }
-}*/
+}
 
-/*.form__user-name {
+.fieldset--grey-background {
+  background-color: $grey-background-effect;
+  padding-top: 115px;
+  padding-bottom: 0;
+ //margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+
   @media (min-width: $tablet-width) {
-  grid-area: name;
-
-  padding-bottom: 5px;
+    box-sizing: border-box;
+    width: 620px;
+    margin: 0 auto;
   }
-}*/
+}
 
-/*.user-name__input-wrap,
-.contacts__input-wrap {
-  display: flex;
-  flex-direction: column;
-}*/
-
-/*.user-name__input-wrap {
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    align-items: baseline;
-    flex-basis: auto;
-    flex-shrink: 0;
-    margin-bottom: 50px;
-  }
-}*/
-
-//перенесено в contest с классом text
-
-/*.user-name__input::placeholder,
-.progress__label,
-.contacts__input::placeholder,
-.app__label,
-.emotion__textarea::placeholder {
+.fieldset-text,
+.fieldset-text::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   align-items: center;
   color: $grey-basic;
-}*/
+}
 
-//перенесено в contest с классом .fieldset-title
-
-/*.user-name__label,
-.contacts__title,
-.progress__title,
-.contacts__label,
-.app__title,
-.emotion__title {
+.fieldset-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   align-items: center;
   color: $pink-basic;
   text-transform: uppercase;
-}*/
-
-/*.user-name__input,
-.contacts__input {
-  padding: 20px 20px;
-  border: 2px solid $grey-light;
-  border-radius: 1px;
-}*/
-
-/*.user-name__input {
-  @media (min-width: $tablet-width) {
-    flex: 1 1 auto;
-  }
-}*/
-
-/*.user-name__input:hover,
-.contacts__input:hover,
-.emotion__textarea:hover {
-  border: 2px solid $grey-basic;
 }
-
-.user-name__input:active,
-.contacts__input:active,
-.emotion__textarea:active {
-  border: 2px solid $pink-basic;
-}
-
-
-.user-name__label,
-.contacts__label {
-  padding: 19px 25px 6px;
-}
-
-.user-name__label {
-  @media (min-width: $tablet-width) {
-    padding-left: 0px;
-    padding-right: 20px;
-  }
-}*/
-
-//Перенесено в contest с классом fieldset--grey-background
-
-/*.form__progress,
-.form__app {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-  @media (max-width: $mobile-max-width) {
-    border: none;
-    background-color: $grey-background-effect;
-    padding-top: 115px;
-    padding-bottom: 0;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
-  @media (min-width: $tablet-width) {
-    box-sizing: border-box;
-    width: 620px;
-    margin: 0 auto;
-  }
-}*/
-
-/*.form__progress {
-  @media (min-width: $tablet-width) {
-    grid-area: progress;
-  }
-}*/
-
-/*.contacts__title,
-.progress__title,
-.app__title {
-  @media (max-width: $mobile-max-width) {
-    line-height: 18px;
-    text-align: center;
-
-    position: absolute;
-    width: 280px;
-    top: 40px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
-  display: inline-block;
-  text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;
-}*/
-
-/*.contacts__title {
-  @media (max-width: $mobile-max-width) {
-    display: none;
-  }
-}*/
-
-/*.progress__label {
-  width: 280px;
-  margin: 0 auto;
-  padding-bottom: 52px;
-  padding-left: 60px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    width: 620px;
-    padding-right: 119px;
-  }
-}
-
-.progress__label::before {
-  content: "";
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  background-color: $white;
-  border: 2px solid $grey-light;
-  top: -5px;
-  left: 0;
-}
-
-.progress__input:checked + .progress__label::after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 16px;
-  background-image: url(../img/contest/check.svg);
-  left: 10px;
-  top: 5px;
-}
-
-.progress__input:hover + .progress__label::before {
-  border: 2px solid $grey-basic;
-}
-
-.progress__input:active + .progress__label::before {
-  border: 2px solid $pink-basic;
-}
-
-.progress__input:active:checked + .progress__label::before {
-  border: 2px solid $pink-basic;
-}*/
-
-/*.form__contacts {
-  @media (min-width: $tablet-width) {
-    grid-area: contacts;
-
-    box-sizing: border-box;
-    border: 2px solid $grey-light;
-    padding-bottom: 42px;
-  }
-}*/
-
-/*.form__app {
-  @media (min-width: $tablet-width) {
-    grid-area: app;
-
-    border: 2px solid $grey-light;
-    padding-top: 42px;
-    padding-bottom: 8px;
-    margin-bottom: 52px;
-  }
-}*/
-
-/*.app__label {
-  width: 280px;
-  margin: 0 auto;
-  padding-bottom: 47px;
-  padding-left: 70px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    width: 580px;
-    padding-left: 100px;
-  }
-}
-
-.app__label::before {
-  content: "";
-  position: absolute;
-  width: 37px;
-  height: 37px;
-  background-color: $white;
-  border: 2px solid $grey-light;
-  border-radius: 50%;
-  top: -6px;
-  left: 40px;
-}
-
-.app__input:checked + .app__label::after {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background-color: $pink-basic;
-  border-radius: 50%;
-  left: 53px;
-  top: 7px;
-}
-
-.app__input:hover + .app__label::before {
-  border: 2px solid $grey-basic;
-}
-
-.app__input:active + .app__label::before {
-  border: 2px solid $pink-basic;
-}
-
-.app__input:active:checked + .app__label::before {
-  border: 2px solid $pink-basic;
-}*/
-
-/*.form__emotion {
-  @media (min-width: $tablet-width) {
-    grid-area: emotion;
-  }
-}
-
-.emotion__title {
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
-
-.emotion__textarea {
-  border: 2px solid $grey-light;
-  border-radius: 1px;
-  padding: 13px 20px;
-  box-sizing: border-box;
-  width: 280px;
-}*/
-
-/*.form__wrap-button {
-  align-items: center;
-  padding-top: 18px;
-  padding-bottom: 16px;
-}
-
-.form__button {
-  box-sizing: border-box;
-  width: 276px;
-  height: 59px;
-  background: $green-button;
-  border: 2px solid $green-button;
-  border-radius: 3px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-}
-
-.form__button:hover {
-  background: $green-button-hover;
-  border: 2px solid $green-button-hover;
-}
-
-.form__button:active {
-  background: $green-button-hover;
-  border: 2px solid $green-button-hover;
-  color: rgba($color: $white, $alpha: 0.3);
-}
-
-.form__button:disabled {
-  background: $grey-light;
-  border: 2px solid $grey-light;
-  color: $white;
-}*/
-
-/*.form__notice {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin-top: 37px;
-}*/
