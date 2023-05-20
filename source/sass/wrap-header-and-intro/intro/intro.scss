@@ -153,6 +153,7 @@
   line-height: 18px;
   color: $white;
   text-align: center;
+  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     width: 300px;
