@@ -1,7 +1,4 @@
-.contacts {
-}
-
-.contacts__title {
+.our-contacts__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -24,7 +21,7 @@
   }
 }
 
-.contacts__list {
+.our-contacts__list {
   width: 320px;
   margin: 0 auto;
   position: relative;
@@ -46,24 +43,13 @@
   }
 }
 
-//.contacts__list::after {
-//  content: "";
-//  width: auto;
-//  height: auto;
-//  position: absolute;
-//  background-image: url("../../img/index/map_triangle.svg");
-//  background-size: cover;
-//  top: 150px;
-//  z-index: 1;
-//}
-
-.contacts__item:first-child {
+.our-contacts__item:first-child {
   @media (min-width: $desktop-width) {
     order: -2;
   }
 }
 
-.contacts__item:last-child {
+.our-contacts__item:last-child {
   @media (min-width: $tablet-width) {
     grid-column: span 2;
   }
@@ -73,13 +59,13 @@
   }
 }
 
-.contacts__item {
+.our-contacts__item {
   @media (min-width: $desktop-width) {
     margin-left: 25px;
   }
 }
 
-.contacts__subtitle {
+.our-contacts__subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -93,8 +79,8 @@
   }
 }
 
-.contacts__link,
-.contacts__text {
+.our-contacts__link,
+.our-contacts__text {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -107,7 +93,7 @@
   }
 }
 
-.contacts__item:last-child .contacts__subtitle {
+.our-contacts__item:last-child .our-contacts__subtitle {
   margin-top: 23px;
 
   @media (min-width: $tablet-width) {
@@ -119,7 +105,7 @@
   }
 }
 
-.contacts__text {
+.our-contacts__text {
   margin-top: 0;
 
   @media (min-width: $desktop-width) {
@@ -128,7 +114,7 @@
   }
 }
 
-.contacts__svg {
+.our-contacts__svg {
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -144,7 +130,7 @@
   }
 }
 
-.contacts__map {
+.our-contacts__map {
   width: 100%;
   position: relative;
   z-index: -3;
@@ -157,17 +143,3 @@
     height: 502px;
   }
 }
-
-//.contacts__map::before {
-//  content: "";
-//  position: absolute;
-//  margin: auto;
-//  top: 0;
-//  bottom: auto;
-//  left: 0;
-//  right: 0;
-//  width: 100%;
-//  height: 53px;
-//  background: url("../../img/index/map_triangle.svg") no-repeat top center;
-//  z-index: 20;
-//}
