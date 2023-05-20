@@ -7,7 +7,7 @@ html(lang="ru")
       h1.catalog__title Фотографии <br> пользователей
     main
       section.user-photo
-        p.user-photo__title Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?
+        h2.user-photo__title Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?
         div.user-photo__top-photo.top-photo
           a.top-photo__link(href="#")
             picture
@@ -161,6 +161,6 @@ html(lang="ru")
               div.photo-editor__scale
                 div.photo-editor__toggle
           div.photo-editor__wrap-buttons
-            button.photo-editor__button.photo-editor__button--submint(type="submint") Запостить
+            button.photo-editor__button.photo-editor__button--submint(type="submit") Запостить
             button.photo-editor__button.photo-editor__button--reset(type="reset") Отмена
     include parts/footer.pug
