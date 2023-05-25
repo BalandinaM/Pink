@@ -1,0 +1,135 @@
+.modal {
+  display: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 1px 12px 31px -11px rgba(40,54,69,1);
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 30px;
+    margin-bottom: 5px;
+  }
+}
+
+.modal__title--error {
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+    padding: 0 100px;
+  }
+}
+
+.modal__title--application {
+  @media (min-width: $desktop-width) {
+    margin-top: 43px;
+  }
+}
+
+.modal__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $grey-basic;
+  margin-bottom: 43px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 34px;
+    padding: 0 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 190px;
+    margin-bottom: 61px;
+  }
+}
+
+.modal__text--error {
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
+}
+
+.modal__text--application {
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.modal__wrap-button {
+  background-color: $grey-background-effect;
+  box-sizing: border-box;
+  padding: 52px 0;
+  width: 320px;
+  display: inline-flex;
+
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.popup-error .modal__wrap-button {
+  @media (max-width: $tablet-max-width) {
+    background-color: $white;
+    padding: 0;
+    padding-bottom: 52px;
+  }
+}
+
+.modal__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid $green-button;
+  border-radius: 3px;
+  background-color: $green-button;
+  box-sizing: border-box;
+  width: 276px;
+  padding: 13px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}
+
+.modal__button--close {
+  @media (min-width: $desktop-width) {
+    width: 456px;
+  }
+}
+
+
