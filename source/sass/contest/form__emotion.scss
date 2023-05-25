@@ -1,4 +1,6 @@
 .form__emotion {
+  padding-top: 10px;
+
   @media (min-width: $tablet-width) {
     width: 620px;
     background-color: $white;
@@ -18,12 +20,10 @@
 .emotion__title {
   display: block;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 38px;
-    padding-right: 38px;
+    padding: 16px 38px 10px 38px;
   }
 }
 

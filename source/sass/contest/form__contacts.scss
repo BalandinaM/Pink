@@ -1,6 +1,7 @@
 .form__contacts {
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -37,6 +38,10 @@
     padding-left: 25px;
     padding-right: 25px;
     //margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 345px;
   }
 }
 
