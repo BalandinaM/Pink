@@ -236,3 +236,13 @@ exports.default = gulp.series(
 );
 
 //webmanifest не нужно копировать в папку сборки?!
+
+//Публикация на github pages
+
+
+const ghPages = require('gulp-gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
