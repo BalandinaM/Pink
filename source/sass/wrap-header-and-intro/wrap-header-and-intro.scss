@@ -1,29 +1,29 @@
 .wrap-header-and-intro {
   background-color: $grey-dark;
-  background-image: url("../../img/index/intro_back_mobile.webp");
+  background-image: url("../img/index/intro_back_mobile.webp");
   background-repeat: no-repeat;
   background-size: 100% 462px;
   background-position: 0 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index/intro_back_mobile@2x.webp");
+    background-image: url("../img/index/intro_back_mobile@2x.webp");
   }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/index/intro_back_tablet.webp");
+    background-image: url("../img/index/intro_back_tablet.webp");
     background-size: 100% 729px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/intro_back_tablet@2x.webp");
+      background-image: url("../img/index/intro_back_tablet@2x.webp");
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/index/intro_back_desktop.webp");
+    background-image: url("../img/index/intro_back_desktop.webp");
     background-size: 100% 853px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/index/intro_back_desktop@2x.webp");
+      background-image: url("../img/index/intro_back_desktop@2x.webp");
     }
   }
 }
